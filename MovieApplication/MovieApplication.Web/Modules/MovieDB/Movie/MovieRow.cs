@@ -9,7 +9,7 @@ using System.IO;
 namespace MovieApplication.MovieDB
 {
     [ConnectionKey("Default"), Module("MovieDB"), TableName("[mov].[Movie]")]
-    [DisplayName("Movie"), InstanceName("Movie")]
+    [DisplayName("Movies"), InstanceName("Movie")]
     [ReadPermission("Administration:General")]
     [ModifyPermission("Administration:General")]
     public sealed class MovieRow : Row<MovieRow.RowFields>, IIdRow, INameRow
@@ -56,7 +56,7 @@ namespace MovieApplication.MovieDB
             set => fields.ReleaseDate[this] = value;
         }
 
-        [DisplayName("Runtime (Minutes)")]
+        [DisplayName("Runtime (Minutes)"), Width(150), AlignRight]
         public int? Runtime
         {
             get => fields.Runtime[this];

@@ -1,0 +1,28 @@
+{
+  "RootNamespace": "MovieApplication",
+  "ServerTypings": {
+    "LocalTexts": true
+  },
+  "Restore": {
+    "Exclude": [
+      "/wwwroot/Scripts/serenity/Serenity.CoreLib*.*"
+    ]
+  },
+  "Connections": [
+    {
+      "Key": "Default",
+      "Tables": [
+        {
+          "Tablename": "mov.Movie",
+          "Identifier": "Movie",
+          "Module": "MovieDB",
+          "PermissionKey": "Administration:General"
+        }
+      ]
+    }
+  ],
+  "UpgradeInfo": {
+    "InitialType": "Community",
+    "InitialVersion": "6.0.3.0"
+  }
+}

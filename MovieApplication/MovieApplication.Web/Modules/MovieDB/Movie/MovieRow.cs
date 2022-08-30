@@ -56,7 +56,7 @@ namespace MovieApplication.MovieDB
             set => fields.ReleaseDate[this] = value;
         }
 
-        [DisplayName("Runtime")]
+        [DisplayName("Runtime (Minutes)")]
         public int? Runtime
         {
             get => fields.Runtime[this];

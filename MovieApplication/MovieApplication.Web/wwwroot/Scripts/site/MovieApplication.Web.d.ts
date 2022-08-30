@@ -501,8 +501,8 @@ declare namespace MovieApplication.MovieDB {
 declare namespace MovieApplication.MovieDB {
     interface MovieForm {
         Title: Serenity.StringEditor;
-        Description: Serenity.StringEditor;
-        Storyline: Serenity.StringEditor;
+        Description: Serenity.TextAreaEditor;
+        Storyline: Serenity.TextAreaEditor;
         Year: Serenity.IntegerEditor;
         ReleaseDate: Serenity.DateEditor;
         Runtime: Serenity.IntegerEditor;
